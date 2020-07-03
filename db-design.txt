@@ -1,0 +1,25 @@
+tweets -> {
+    text: String,
+    mediaUrl : String,
+    created: milliseconds,
+    user: String,
+    isScheduled: Boolean,
+    scheduledTime : DateTime
+    mediaId: String | Number,
+    postId: String | Number
+}
+
+users -> {
+    email : String,
+    accountsConnected: Array<Object>
+}
+
+users -> accountsConnected -> {
+    config: 'twitter'
+    data: {
+        screen_name: String,
+        user_id: String,
+        oauth_token: String,
+        oauth_token_secret : String
+    }
+}

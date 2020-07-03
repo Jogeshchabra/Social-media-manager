@@ -1,0 +1,42 @@
+.header {
+  padding: 1.5rem;
+  padding-bottom: 10rem;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand {
+  composes: links from '../../common/styles/styles.module.css';
+  font-size: calc(var(--default-font-size) + 0.6rem);
+  font-weight: 500;
+}
+
+.brandImg {
+  width: 14rem;
+}
+
+.navMenu {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: absolute;
+  right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.navMenuItem {
+  font-size: var(--default-font-size);
+  cursor: pointer;
+}
+
+.navMenuItem:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.navMenuLink {
+  composes: links from '../../common/styles/styles.module.css';
+}

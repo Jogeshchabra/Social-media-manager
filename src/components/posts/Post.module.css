@@ -1,0 +1,8 @@
+.container {
+  display: inline-block;
+}
+
+.dangerBtn {
+  background-color: rgba(252, 31, 31, 0.925) !important;
+  color: #fff !important;
+}

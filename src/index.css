@@ -1,0 +1,33 @@
+:root {
+  --default-font-size: 1.4rem;
+  --col-dark: #333333;
+  --col-light: #d4d4d4;
+  --bg-light: var(--col-light);
+  --font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* Makes using relative sizes very simple this makes 10px = 1rem */
+}
+
+body {
+  font-family: var(--font-family);
+  box-sizing: border-box;
+  font-size: var(--default-font-size);
+  line-height: 1.4;
+  color: var(--col-dark);
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
